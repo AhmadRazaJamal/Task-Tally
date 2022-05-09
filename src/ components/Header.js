@@ -3,7 +3,12 @@ import Typography from '@mui/material/Typography';
 
 const Header = () => {
   return (
-    <Typography variant="h3" gutterBottom component="div">Task Tally</Typography>
+    <header className='header'>
+    <h1 variant="h3" gutterBottom component="div">Task Tally</h1>
+    <button variant="contained" color="success" className='btn'>
+        Add
+    </button>
+    </header>
   )
 }
 
