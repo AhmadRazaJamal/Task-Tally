@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-const Header = () => {
+const Header = ({onAdd, formShown}) => {
 
   const onClick = () => {
 
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className='header'>
     <h1 variant="h3" gutterBottom component="div">Task Tally</h1>
-    <Button label="Add" color="royalblue"/>
+    <Button label={formShown ? "X" : "Add a task"} color={formShown ? "red" : "royalblue"} onClick={onAdd}/>
     </header>
   )
 }
