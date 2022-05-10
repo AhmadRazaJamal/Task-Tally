@@ -1,13 +1,16 @@
 import React from 'react'
-import Typography from '@mui/material/Typography';
+import Button from './Button'
 
 const Header = () => {
+
+  const onClick = () => {
+
+  }
+
   return (
     <header className='header'>
     <h1 variant="h3" gutterBottom component="div">Task Tally</h1>
-    <button variant="contained" color="success" className='btn'>
-        Add
-    </button>
+    <Button label="Add" color="royalblue"/>
     </header>
   )
 }
