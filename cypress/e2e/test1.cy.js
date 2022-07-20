@@ -1,8 +1,10 @@
 describe('My First Test', () => {
     it('finds the content "type"', () => {
-        cy.visit('https://example.cypress.io')
+        cy.visit('/')
 
-        cy.contains('type').click()
-        cy.url().should('include', '/commands/actions')
+        cy.get('.btn').click()
+        cy.get('#add-task').type('Kiss Flo')
+        cy.get('#add-date-time').type('Now')
+        cy.get('.submit-button').click()
     })
 })
