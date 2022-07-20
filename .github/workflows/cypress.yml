@@ -17,3 +17,4 @@ jobs:
         with:
           # Specify Browser since container image is compile with Firefox
           browser: chrome
+          wait-on: 'http://localhost:3000'
